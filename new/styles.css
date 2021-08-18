@@ -1,0 +1,47 @@
+body {
+  background-color: #ffeef4;
+  height: 100vh;
+}
+
+.sideLinks {
+}
+
+#language-changer {
+  margin-top: 15px;
+}
+
+.row {
+  margin: 0px;
+}
+
+.container {
+  margin-top: 100px;
+
+  padding: 10px;
+  border: solid white 10px;
+  border-top-left-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+}
+
+#nav {
+  height: 85px;
+}
+
+body > div > div:nth-child(2) > div > ul > li {
+  height: 60px;
+}
+
+body > div > div:nth-child(2) > div > ul > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 140px;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+#content {
+  margin-top: 25px;
+}

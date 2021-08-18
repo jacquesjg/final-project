@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Tracker</title>
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+
+<body>
+    <div class="container white">
+        <div class="row" id="nav">
+            <!-- Titolo -->
+            <div class="col l2 white">        
+                <h5 class="red-text text-darken-4">COVID-19 Tracker</h1>
+            </div>
+        
+            <!--spacer-->
+            <div class="col l1"></div>
+        
+            <!--Search-->
+        
+                  <form>
+                    <div class="input-field col l6 white">
+                      <input id="search" type="search" required>
+                      <label class="label-icon" for="search" id="search"><i class="material-icons">search</i></label>
+                      <i class="material-icons">serach for forms</i>
+                    </div>
+                  </form>
+        
+            <!--spacer-->
+            <div class="col l1"></div>
+        
+            <!--Language-->        
+            <div id=language-changer class="row col l2 valign-wrapper white">
+        
+        
+            <!-- Dropdown Trigger -->
+            <a class='dropdown-trigger btn red lighten-3' href='#' data-target='dropdown1'>Language</a>
+            
+            <!-- Dropdown Structure -->
+            <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#!" class="red-text text-lighten-2">English</a></li>
+                <li><a href="#!" class="red-text text-lighten-2">French</a></li>
+                <li><a href="#!" class="red-text text-lighten-2">Spanish</a></li>
+                <li><a href="#!" class="red-text text-lighten-2">Italian</a></li>
+                <li><a href="#!" class="red-text text-lighten-2">Mandarin</a></li>
+            </ul>
+          
+        
+                    <div class="col l4">
+                    <img src="./language-icons/english-icon.png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                    </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <!-- SideNav -->
+            <div class="sideLinks col l2">
+               <ul>
+                   <li>
+                       <a class="waves-effect red-text text-lighten-2" href="#!"> <i class="material-icons">trending_up</i><span>New Cases</span></a>
+                 </li>
+                   <li>
+                       <a class="waves-effect red-text text-lighten-2" href="#!"> <i class="material-icons">coronavirus</i> Total Cases</a>
+                   </li>
+                   <li>
+                       <a class="waves-effect red-text text-lighten-2" href="#!"> <i class="material-icons">person_add</i> Recovered</a>
+                   </li>
+                   <li>
+                       <a class="waves-effect red-text text-lighten-2" href="#!"> <i class="material-icons">person_remove</i> Deceased</a>
+                   </li>
+                   <li>
+                       <a class="waves-effect red-text text-lighten-2" href="#!"> <i class="material-icons">shield</i> Vaccinated</a>
+                   </li>
+               </ul>
+           </div>
+
+
+            <!--content-->
+            <div id="content" class="col l10 grey-text text-accent-1">contentlkjasl;dkjfa;lkjsdf;lak jlkaj;sldjfa;ljdf;lkajsd;lfjasdl;jfal;ksdjf;lasjkdf;lakjsd;lfkjasl;kdjfa;lskjdf;lakjsdlfkjasl;dkfjal;skdjf;laksjdfl;kajs ;dlfkja;sldkfja;sldkjfa;lskdjf;laskjdf;asjdf</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <!-- Load JS -->
+    <script src="./main.js"></script>
+
+ 
+</body>
+</html>

@@ -14,6 +14,14 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="./styles.css">
+    <!-- Numeral JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    <!-- Map JS -->
+    <script src="./map-style.js"></script>
+    <!-- Load JS -->
+    <script src="./main.js"></script>
+    <!-- CSS for Leaflet (JS library for maps)-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 
 <body>
     <div class="container white">
@@ -29,10 +37,9 @@
             <!--Search-->
         
                   <form>
-                    <div class="input-field col l6 white">
+                    <div class="input-field col l6">
                       <input id="search" type="search" required>
-                      <label class="label-icon" for="search" id="search"><i class="material-icons">search</i></label>
-                      <i class="material-icons">serach for forms</i>
+                      <label class="label-icon" for="search" id="search"><i class="material-icons">search</i><span class="search">Search for Your Country</span></label>
                     </div>
                   </form>
         
@@ -67,39 +74,42 @@
             <!-- SideNav -->
             <div class="sideLinks col l2">
                <ul>
-                   <li>
-                       <a class="waves-effect red-text text-lighten-2" href="#!"> <i class="material-icons">trending_up</i><span>New Cases</span></a>
-                 </li>
-                   <li>
-                       <a class="waves-effect red-text text-lighten-2" href="#!"> <i class="material-icons">coronavirus</i> Total Cases</a>
-                   </li>
-                   <li>
-                       <a class="waves-effect red-text text-lighten-2" href="#!"> <i class="material-icons">person_add</i> Recovered</a>
-                   </li>
-                   <li>
-                       <a class="waves-effect red-text text-lighten-2" href="#!"> <i class="material-icons">person_remove</i> Deceased</a>
-                   </li>
-                   <li>
-                       <a class="waves-effect red-text text-lighten-2" href="#!"> <i class="material-icons">shield</i> Vaccinated</a>
-                   </li>
+                <li>
+                    <a class="waves-effect red-text text-lighten-2" href="#!" onclick="changeDataSelection('totalCases')"> <i class="material-icons">coronavirus</i> Total Cases</a>
+                </li>
+                <li>
+                    <a class="waves-effect red-text text-lighten-2" href="#!" onclick="changeDataSelection('todayCases')"> <i class="material-icons">trending_up</i><span>New Cases</span></a>
+                </li>
+                <li>
+                    <a class="waves-effect red-text text-lighten-2" href="#!" onclick="changeDataSelection('recovered')"> <i class="material-icons">person_add</i> Recovered</a>
+                </li>
+                <li>
+                    <a class="waves-effect red-text text-lighten-2" href="#!" onclick="changeDataSelection('deaths')"> <i class="material-icons">person_remove</i> Deceased</a>
+                </li>
+                <li>
+                    <a class="waves-effect red-text text-lighten-2" href="#!" onclick="changeDataSelection('vaccinated')"> <i class="material-icons">shield</i> Vaccinated</a>
+                </li>
                </ul>
            </div>
 
 
             <!--content-->
-            <div id="content" class="col l10 grey-text text-accent-1">contentlkjasl;dkjfa;lkjsdf;lak jlkaj;sldjfa;ljdf;lkajsd;lfjasdl;jfal;ksdjf;lasjkdf;lakjsd;lfkjasl;kdjfa;lskjdf;lakjsdlfkjasl;dkfjal;skdjf;laksjdfl;kajs ;dlfkja;sldkfja;sldkjfa;lskdjf;laskjdf;asjdf</div>
-
+            <div id="content" class="col l10 red lighten-4">
+            <div class="map-container col l8"><div class="col l12" id="map"></div></div>
+            <div id="graphs-container" class="col l4 grey lighten-4"></div>
+            <div id="twitter" class="col l4 grey lighten-4"><div class="row"><a class="twitter-timeline col l10" data-width="340" data-height="245" href="https://twitter.com/WHO?ref_src=twsrc%5Etfw">Tweets by WHO</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div></div>
+        
         </div>
-    </div>
+        </div>
 </div>
 
 
 
 
 
-    <!-- Load JS -->
-    <script src="./main.js"></script>
 
- 
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
 </body>
 </html>

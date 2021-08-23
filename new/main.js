@@ -2,6 +2,7 @@
 const html = document.querySelector('html');
 let mapCenter = { lat: 24.80746, lng: 0 }
 let WHOData = [];
+let coronaGlobalData;
 
 
 // lat: 64.80746, lng: -40.4796
@@ -78,20 +79,28 @@ const getAllData = () => {
             return response.json()
         })
         .then((data) => {
+            coronaGlobalData = data
             let chartData = buildChartData(data, 'cases');
             buildChart(chartData);
         })
 }
 
-// Need To Store Global Corona to 
+
+
+
+const clearTheMap = () => {
+    for (let circle of mapCircles) {
+        map.removeLayer(circle);
+    }
+}
 
 const changeDataSelection = (casesType) => {
-    /*     setSelectedTab(casesType);
-        changeMapTitle(casesType); */
-    clearTheMap();
-    showDataOnMap(coronaGlobalData, casesType);
-    /*     let chartData = buildChartData(coronaHistoricalData, casesType);
-        updateData(chartData, casesTypeColors[casesType].rgb, casesTypeColors[casesType].half_op); */
+    /*    setSelectedTab(casesType);
+        changeMapTitle(casesType);
+    clearTheMap(); 
+    showDataOnMap(coronaGlobalData, casesType);*/
+    let chartData = buildChartData(coronaGlobalData, casesType);
+    updateData(chartData, casesTypeColors[casesType].rgb, casesTypeColors[casesType].half_op);
 }
 
 // Fetch WHO Regions List - Gives a List of objects of Country ISO2 code example "us" along with WHO region

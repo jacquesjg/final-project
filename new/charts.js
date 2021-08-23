@@ -87,3 +87,13 @@ const buildChart = (chartData) => {
         }
     });
 }
+
+const updateData = (data, borderColor, backgroundColor) => {
+    chart.data.datasets[0].data = data;
+    chart.data.datasets[0].borderColor = borderColor;
+    chart.data.datasets[0].backgroundColor = backgroundColor;
+    chart.update({
+        duration: 800,
+        easing: 'easeInOutCubic'
+    });
+}

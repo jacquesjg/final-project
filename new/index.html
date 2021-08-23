@@ -19,6 +19,8 @@
     <!-- Map JS -->
     <script src="./map-style.js"></script>
     <!-- Load JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js"></script>
+    <script src="./charts.js"></script>
     <script src="./main.js"></script>
     <!-- CSS for Leaflet (JS library for maps)-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
@@ -96,7 +98,7 @@
             <!--content-->
             <div id="content" class="col l10 red lighten-4">
             <div class="map-container col l8"><div class="col l12" id="map"></div></div>
-            <div id="graphs-container" class="col l4 grey lighten-4"></div>
+            <div id="graphs-container" class="col l4 grey lighten-4"><canvas id="myChart"></canvas></div>
             <div id="twitter" class="col l4 grey lighten-4"><div class="row"><a class="twitter-timeline col l10" data-width="340" data-height="245" href="https://twitter.com/WHO?ref_src=twsrc%5Etfw">Tweets by WHO</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div></div>
         

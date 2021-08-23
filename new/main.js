@@ -40,6 +40,7 @@ window.onload = () => {
     initMap();
     getCountriesData();
     fetchRegions();
+    getAllData();
 
 }
 
@@ -64,11 +65,34 @@ const getCountriesData = () => {
         .then((response) => {
             return response.json()
         }).then((data) => {
+            console.log('Data: ', data);
             showDataOnMap(data);
+
         })
 }
 
 
+const getAllData = () => {
+    fetch("https://disease.sh/v3/covid-19/historical/all?lastdays=120")
+        .then((response) => {
+            return response.json()
+        })
+        .then((data) => {
+            let chartData = buildChartData(data, 'cases');
+            buildChart(chartData);
+        })
+}
+
+// Need To Store Global Corona to 
+
+const changeDataSelection = (casesType) => {
+    /*     setSelectedTab(casesType);
+        changeMapTitle(casesType); */
+    clearTheMap();
+    showDataOnMap(coronaGlobalData, casesType);
+    /*     let chartData = buildChartData(coronaHistoricalData, casesType);
+        updateData(chartData, casesTypeColors[casesType].rgb, casesTypeColors[casesType].half_op); */
+}
 
 // Fetch WHO Regions List - Gives a List of objects of Country ISO2 code example "us" along with WHO region
 const fetchRegions = () => {
@@ -80,8 +104,8 @@ const fetchRegions = () => {
 
                 let regionAttribute = {};
 
-                console.log('object', object)
-                console.log('regionAttribute', regionAttribute);
+                /*   console.log('object', object)
+                  console.log('regionAttribute', regionAttribute); */
 
                 for (const object2 of object.attr) {
                     if (object2.category === "WHO_REGION")
@@ -126,7 +150,7 @@ const showDataOnMap = (data, casesType = "cases") => {
             lng: country.countryInfo.long
         }
 
-        console.log(country);
+        /*  console.log(country); */
 
         let circle = L.circle([countryCenter.lat, countryCenter.lng], {
             color: casesTypeColors[casesType].hex,

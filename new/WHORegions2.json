@@ -1,0 +1,1424 @@
+[
+    {
+        "region": "Eastern Mediterranean",
+        "iso2": {
+            "category": "ISO2",
+            "value": "AF"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "AL"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "DZ"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "AD"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "AO"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "AG"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "AR"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "AM"
+        }
+    },
+    {
+        "region": "Western Pacific",
+        "iso2": {
+            "category": "ISO2",
+            "value": "AU"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "AT"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "AZ"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "BS"
+        }
+    },
+    {
+        "region": "Eastern Mediterranean",
+        "iso2": {
+            "category": "ISO2",
+            "value": "BH"
+        }
+    },
+    {
+        "region": "South-East Asia",
+        "iso2": {
+            "category": "ISO2",
+            "value": "BD"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "BB"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "BY"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "BE"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "BZ"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "BJ"
+        }
+    },
+    {
+        "region": "South-East Asia",
+        "iso2": {
+            "category": "ISO2",
+            "value": "BT"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "BO"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "BA"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "BW"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "BR"
+        }
+    },
+    {
+        "region": "Western Pacific",
+        "iso2": {
+            "category": "ISO2",
+            "value": "BN"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "BG"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "BF"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "BI"
+        }
+    },
+    {
+        "region": "Western Pacific",
+        "iso2": {
+            "category": "ISO2",
+            "value": "KH"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "CM"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "CA"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "CV"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "CF"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "TD"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "CL"
+        }
+    },
+    {
+        "region": "Western Pacific",
+        "iso2": {
+            "category": "ISO2",
+            "value": "CN"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "CO"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "KM"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "CG"
+        }
+    },
+    {
+        "region": "Western Pacific",
+        "iso2": {
+            "category": "ISO2",
+            "value": "CK"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "CR"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "HR"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "CU"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "CY"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "CZ"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "CI"
+        }
+    },
+    {
+        "region": "South-East Asia",
+        "iso2": {
+            "category": "ISO2",
+            "value": "KP"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "CD"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "DK"
+        }
+    },
+    {
+        "region": "Eastern Mediterranean",
+        "iso2": {
+            "category": "ISO2",
+            "value": "DJ"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "DM"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "DO"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "EC"
+        }
+    },
+    {
+        "region": "Eastern Mediterranean",
+        "iso2": {
+            "category": "ISO2",
+            "value": "EG"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "SV"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "GQ"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "ER"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "EE"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "ET"
+        }
+    },
+    {
+        "region": "Western Pacific",
+        "iso2": {
+            "category": "ISO2",
+            "value": "FJ"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "FI"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "FR"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "GA"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "GM"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "GE"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "DE"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "GH"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "GR"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "GD"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "GT"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "GN"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "GW"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "GY"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "HT"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "HN"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "HU"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "IS"
+        }
+    },
+    {
+        "region": "South-East Asia",
+        "iso2": {
+            "category": "ISO2",
+            "value": "IN"
+        }
+    },
+    {
+        "region": "South-East Asia",
+        "iso2": {
+            "category": "ISO2",
+            "value": "ID"
+        }
+    },
+    {
+        "region": "Eastern Mediterranean",
+        "iso2": {
+            "category": "ISO2",
+            "value": "IR"
+        }
+    },
+    {
+        "region": "Eastern Mediterranean",
+        "iso2": {
+            "category": "ISO2",
+            "value": "IQ"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "IE"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "IL"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "IT"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "JM"
+        }
+    },
+    {
+        "region": "Western Pacific",
+        "iso2": {
+            "category": "ISO2",
+            "value": "JP"
+        }
+    },
+    {
+        "region": "Eastern Mediterranean",
+        "iso2": {
+            "category": "ISO2",
+            "value": "JO"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "KZ"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "KE"
+        }
+    },
+    {
+        "region": "Western Pacific",
+        "iso2": {
+            "category": "ISO2",
+            "value": "KI"
+        }
+    },
+    {
+        "region": "Eastern Mediterranean",
+        "iso2": {
+            "category": "ISO2",
+            "value": "KW"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "KG"
+        }
+    },
+    {
+        "region": "Western Pacific",
+        "iso2": {
+            "category": "ISO2",
+            "value": "LA"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "LV"
+        }
+    },
+    {
+        "region": "Eastern Mediterranean",
+        "iso2": {
+            "category": "ISO2",
+            "value": "LB"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "LS"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "LR"
+        }
+    },
+    {
+        "region": "Eastern Mediterranean",
+        "iso2": {
+            "category": "ISO2",
+            "value": "LY"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "LT"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "LU"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "MG"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "MW"
+        }
+    },
+    {
+        "region": "Western Pacific",
+        "iso2": {
+            "category": "ISO2",
+            "value": "MY"
+        }
+    },
+    {
+        "region": "South-East Asia",
+        "iso2": {
+            "category": "ISO2",
+            "value": "MV"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "ML"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "MT"
+        }
+    },
+    {
+        "region": "Western Pacific",
+        "iso2": {
+            "category": "ISO2",
+            "value": "MH"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "MR"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "MU"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "MX"
+        }
+    },
+    {
+        "region": "Western Pacific",
+        "iso2": {
+            "category": "ISO2",
+            "value": "FM"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "MC"
+        }
+    },
+    {
+        "region": "Western Pacific",
+        "iso2": {
+            "category": "ISO2",
+            "value": "MN"
+        }
+    },
+    {
+        "region": "South-East Asia",
+        "iso2": {
+            "category": "ISO2",
+            "value": "ME"
+        }
+    },
+    {
+        "region": "Eastern Mediterranean",
+        "iso2": {
+            "category": "ISO2",
+            "value": "MA"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "MZ"
+        }
+    },
+    {
+        "region": "South-East Asia",
+        "iso2": {
+            "category": "ISO2",
+            "value": "MM"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "NA"
+        }
+    },
+    {
+        "region": "Western Pacific",
+        "iso2": {
+            "category": "ISO2",
+            "value": "NR"
+        }
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "NP"
+        },
+        "region": "South-East Asia"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "NL"
+        },
+        "region": "Europe"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "NZ"
+        },
+        "region": "Western Pacific"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "NI"
+        },
+        "region": "Americas"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "NE"
+        },
+        "region": "Africa"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "NG"
+        },
+        "region": "Africa"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "NU"
+        },
+        "region": "Western Pacific"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "NO"
+        },
+        "region": "Europe"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "OM"
+        },
+        "region": "Eastern Mediterranean"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "PK"
+        },
+        "region": "Eastern Mediterranean"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "PW"
+        },
+        "region": "Western Pacific"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "PA"
+        },
+        "region": "Americas"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "PG"
+        },
+        "region": "Western Pacific"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "PY"
+        },
+        "region": "Americas"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "PE"
+        },
+        "region": "Americas"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "PH"
+        },
+        "region": "Western Pacific"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "PL"
+        },
+        "region": "Europe"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "PT"
+        },
+        "region": "Europe"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "QA"
+        },
+        "region": "Eastern Mediterranean"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "KR"
+        },
+        "region": "Western Pacific"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "MD"
+        },
+        "region": "Europe"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "RO"
+        },
+        "region": "Europe"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "RU"
+        },
+        "region": "Europe"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "RW"
+        },
+        "region": "Africa"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "KN"
+        },
+        "region": "Americas"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "LC"
+        },
+        "region": "Americas"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "VC"
+        },
+        "region": "Americas"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "WS"
+        },
+        "region": "Western Pacific"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "SM"
+        },
+        "region": "Europe"
+    },
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "ST"
+        },
+        "region": "Africa"
+    },
+    {
+        "region": "Eastern Mediterranean",
+        "iso2": {
+            "category": "ISO2",
+            "value": "SA"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "SN"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "RS"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "SC"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "SL"
+        }
+    },
+    {
+        "region": "Western Pacific",
+        "iso2": {
+            "category": "ISO2",
+            "value": "SG"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "SK"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "SI"
+        }
+    },
+    {
+        "region": "Western Pacific",
+        "iso2": {
+            "category": "ISO2",
+            "value": "SB"
+        }
+    },
+    {
+        "region": "Eastern Mediterranean",
+        "iso2": {
+            "category": "ISO2",
+            "value": "SO"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "ZA"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "ES"
+        }
+    },
+    {
+        "region": "South-East Asia",
+        "iso2": {
+            "category": "ISO2",
+            "value": "LK"
+        }
+    },
+    {
+        "region": "Eastern Mediterranean",
+        "iso2": {
+            "category": "ISO2",
+            "value": "SD"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "SR"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "SZ"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "SE"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "CH"
+        }
+    },
+    {
+        "region": "Eastern Mediterranean",
+        "iso2": {
+            "category": "ISO2",
+            "value": "SY"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "TJ"
+        }
+    },
+    {
+        "region": "South-East Asia",
+        "iso2": {
+            "category": "ISO2",
+            "value": "TH"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "MK"
+        }
+    },
+    {
+        "region": "South-East Asia",
+        "iso2": {
+            "category": "ISO2",
+            "value": "TL"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "TG"
+        }
+    },
+    {
+        "region": "Western Pacific",
+        "iso2": {
+            "category": "ISO2",
+            "value": "TO"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "TT"
+        }
+    },
+    {
+        "region": "Eastern Mediterranean",
+        "iso2": {
+            "category": "ISO2",
+            "value": "TN"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "TR"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "TM"
+        }
+    },
+    {
+        "region": "Western Pacific",
+        "iso2": {
+            "category": "ISO2",
+            "value": "TV"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "UG"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "UA"
+        }
+    },
+    {
+        "region": "Eastern Mediterranean",
+        "iso2": {
+            "category": "ISO2",
+            "value": "AE"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "GB"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "TZ"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "US"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "UY"
+        }
+    },
+    {
+        "region": "Europe",
+        "iso2": {
+            "category": "ISO2",
+            "value": "UZ"
+        }
+    },
+    {
+        "region": "Western Pacific",
+        "iso2": {
+            "category": "ISO2",
+            "value": "VU"
+        }
+    },
+    {
+        "region": "Americas",
+        "iso2": {
+            "category": "ISO2",
+            "value": "VE"
+        }
+    },
+    {
+        "region": "Western Pacific",
+        "iso2": {
+            "category": "ISO2",
+            "value": "VN"
+        }
+    },
+    {
+        "region": "Eastern Mediterranean",
+        "iso2": {
+            "category": "ISO2",
+            "value": "YE"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "ZM"
+        }
+    },
+    {
+        "region": "Africa",
+        "iso2": {
+            "category": "ISO2",
+            "value": "ZW"
+        }
+    },
+    {
+        "region": "Europe"
+    },
+    {},
+    {},
+    {
+        "region": "Americas"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+        "iso2": {
+            "category": "ISO2",
+            "value": "CS"
+        }
+    },
+    {
+        "region": "Eastern Mediterranean"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+        "region": "Africa"
+    },
+    {
+        "region": "Eastern Mediterranean"
+    },
+    {},
+    {}
+]

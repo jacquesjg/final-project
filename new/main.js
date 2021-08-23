@@ -1,9 +1,10 @@
 // let my lets be lets
 const html = document.querySelector('html');
 let mapCenter = { lat: 24.80746, lng: 0 }
-let WHOData = [];
 let coronaGlobalData;
-
+let coronaHistoricalData;
+let WHOData = [];
+let storediso2 = '';
 
 // lat: 64.80746, lng: -40.4796
 let mapCircles = [];
@@ -40,9 +41,8 @@ window.onload = () => {
         var instances = M.Dropdown.init(elems); */
     initMap();
     getCountriesData();
-    fetchRegions();
-    getAllData();
-
+    getHistoricalData();
+    getWHOData();
 }
 
 var map;
@@ -67,26 +67,46 @@ const getCountriesData = () => {
             return response.json()
         }).then((data) => {
             console.log('Data: ', data);
+            coronaGlobalData = data
             showDataOnMap(data);
-
         })
 }
 
 
-const getAllData = () => {
-    fetch("https://disease.sh/v3/covid-19/historical/all?lastdays=120")
+const getHistoricalData = () => {
+    fetch("https://disease.sh/v3/covid-19/historical/all?lastdays=all")
         .then((response) => {
             return response.json()
         })
         .then((data) => {
-            coronaGlobalData = data
+            console.log()
+            coronaHistoricalData = data
+            console.log('historical data', data)
             let chartData = buildChartData(data, 'cases');
             buildChart(chartData);
         })
 }
 
 
+// WHO regions
+const getWHOData = () => {
+    fetch('./WHORegions2.json')
+        .then((response) => {
+            console.log('response', response)
+            return response.json()
+        }).then((data) => {
+            console.log('WHOData: ', data);
+            for (const object of data) {
+                WHOData.push(object)
+            }
+        })
+}
 
+console.log('GlobalWHOData', WHOData)
+
+for (const object of WHOData) {
+    console.log('Object', object)
+}
 
 const clearTheMap = () => {
     for (let circle of mapCircles) {
@@ -96,38 +116,15 @@ const clearTheMap = () => {
 
 const changeDataSelection = (casesType) => {
     /*    setSelectedTab(casesType);
-        changeMapTitle(casesType);
-    clearTheMap(); 
-    showDataOnMap(coronaGlobalData, casesType);*/
-    let chartData = buildChartData(coronaGlobalData, casesType);
+        changeMapTitle(casesType);*/
+    clearTheMap();
+    showDataOnMap(coronaGlobalData, casesType);
+    let chartData = buildChartData(coronaHistoricalData, casesType);
+    console.log(chartData)
     updateData(chartData, casesTypeColors[casesType].rgb, casesTypeColors[casesType].half_op);
 }
 
-// Fetch WHO Regions List - Gives a List of objects of Country ISO2 code example "us" along with WHO region
-const fetchRegions = () => {
-    fetch('./whoRegions.json')
-        .then((response) => {
-            return response.json()
-        }).then((dataArr) => {
-            for (const object of dataArr) {
 
-                let regionAttribute = {};
-
-                /*   console.log('object', object)
-                  console.log('regionAttribute', regionAttribute); */
-
-                for (const object2 of object.attr) {
-                    if (object2.category === "WHO_REGION")
-                        regionAttribute.region = object2.value
-                    if (object2.category === "ISO2")
-                        regionAttribute.iso2 = object2.value.toLowerCase();
-                }
-
-                WHOData.push(regionAttribute);
-            }
-        })
-}
-console.log(WHOData)
 
 //WHO Regional Twitter Accounts
 const WHOGlobalTwitter = 'https://twitter.com/WHO';
@@ -168,29 +165,38 @@ const showDataOnMap = (data, casesType = "cases") => {
             radius: Math.sqrt(country[casesType]) * casesTypeColors[casesType].multiplier
         }).addTo(map);
 
-        var html = `
-        <div class="info-container">
-            <div class="info-flag" style="background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/${country.countryInfo.iso2.toLowerCase()}.svg);">
+        // fixes break issue with chart (null)
+        if (country.countryInfo.iso2 != null) {
+            var html = `
+            <div class="info-container">
+                <div class="info-flag" style="background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/${country.countryInfo.iso2.toLowerCase()}.svg);">
+                </div>
+                <div class="info-name">
+                    ${country.country}
+                </div>
+                <div class="info-confirmed">
+                    <b>Cases:</b> ${numeral(country.cases).format('0,0')}
+                </div>
+                <div class="info-recovered">
+                <b>Recovered:</b> ${numeral(country.recovered).format('0,0')}
+                </div>
+                <div class="info-deaths">   
+                <b>Deaths:</b> ${numeral(country.deaths).format('0,0')}
+                </div>
             </div>
-            <div class="info-name">
-                ${country.country}
-            </div>
-            <div class="info-confirmed">
-                <b>Cases:</b> ${numeral(country.cases).format('0,0')}
-            </div>
-            <div class="info-recovered">
-            <b>Recovered:</b> ${numeral(country.recovered).format('0,0')}
-            </div>
-            <div class="info-deaths">   
-            <b>Deaths:</b> ${numeral(country.deaths).format('0,0')}
-            </div>
-        </div>
-    `;
+        `;
+            console.log(country.countryInfo.iso2)
+            storediso2 = country.countryInfo.iso2
+        }
 
-        circle.bindPopup(html);
+
+        circle.bindPopup(html, storediso2).on("click", circleClick);
         mapCircles.push(circle);
 
     })
 
 }
 
+const circleClick = () => {
+    console.log(storediso2)
+}

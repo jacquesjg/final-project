@@ -1,10 +1,12 @@
 // let my lets be lets
 const html = document.querySelector('html');
+console.log(html)
 let mapCenter = { lat: 24.80746, lng: 0 }
 let coronaGlobalData;
 let coronaHistoricalData;
 let WHOData = [];
 let storediso2 = '';
+let twitterEndpoint;
 
 // lat: 64.80746, lng: -40.4796
 let mapCircles = [];
@@ -28,17 +30,20 @@ var casesTypeColors = {
         multiplier: 500
     }
 }
-let worldwideSelect = {
-    name: "Worldwide",
-    value: "worldwide",
-    selected: true
-}
+
 
 // Initiate Language Drop Down
 window.onload = () => {
+    const twitter = document.querySelector('#twitterChange');
     /*     twttr.widgets.load();
         var elems = document.querySelectorAll('.dropdown-trigger');
         var instances = M.Dropdown.init(elems); */
+    twitterEndpoint = document.querySelector('#twitter-endpoint');
+    console.log(twitterEndpoint)
+
+    //Hide the remaining tweettwe widgets
+
+    changeTweets(1);
     initMap();
     getCountriesData();
     getHistoricalData();
@@ -115,8 +120,6 @@ const clearTheMap = () => {
 }
 
 const changeDataSelection = (casesType) => {
-    /*    setSelectedTab(casesType);
-        changeMapTitle(casesType);*/
     clearTheMap();
     showDataOnMap(coronaGlobalData, casesType);
     let chartData = buildChartData(coronaHistoricalData, casesType);
@@ -124,6 +127,44 @@ const changeDataSelection = (casesType) => {
     updateData(chartData, casesTypeColors[casesType].rgb, casesTypeColors[casesType].half_op);
 }
 
+const changeTweets = (id) => {
+    let widgetArray = [];
+    widgetArray.push(document.getElementById("widget-container-1"));
+    widgetArray.push(document.getElementById("widget-container-2"));
+    widgetArray.push(document.getElementById("widget-container-3"));
+
+    switch (id) {
+        case 1:
+            //Hide all the other widgets, apart from the first one
+            widgetArray[1].classList.remove("show");
+            widgetArray[2].classList.remove("show");
+            widgetArray[1].classList.add("hidden");
+            widgetArray[2].classList.add("hidden");
+            widgetArray[0].classList.remove("hidden");
+            widgetArray[0].classList.add("show");
+            break;
+
+        case 2:
+            //Hide all the other widgets, apart from the second one
+            widgetArray[0].classList.remove("show");
+            widgetArray[2].classList.remove("show");
+            widgetArray[0].classList.add("hidden");
+            widgetArray[2].classList.add("hidden");
+            widgetArray[1].classList.remove("hidden");
+            widgetArray[1].classList.add("show");
+            break;
+
+        case 3:
+            //Hide all the other widgets, apart from the third one
+            widgetArray[0].classList.remove("show");
+            widgetArray[1].classList.remove("show");
+            widgetArray[0].classList.add("hidden");
+            widgetArray[1].classList.add("hidden");
+            widgetArray[2].classList.remove("hidden");
+            widgetArray[2].classList.add("show");
+            break;
+    }
+}
 
 
 //WHO Regional Twitter Accounts
@@ -162,8 +203,13 @@ const showDataOnMap = (data, casesType = "cases") => {
             color: casesTypeColors[casesType].hex,
             fillColor: casesTypeColors[casesType].hex,
             fillOpacity: 0.4,
-            radius: Math.sqrt(country[casesType]) * casesTypeColors[casesType].multiplier
-        }).addTo(map);
+            radius: Math.sqrt(country[casesType]) * casesTypeColors[casesType].multiplier,
+        }).addTo(map)
+
+
+
+
+
 
         // fixes break issue with chart (null)
         if (country.countryInfo.iso2 != null) {
@@ -185,12 +231,9 @@ const showDataOnMap = (data, casesType = "cases") => {
                 </div>
             </div>
         `;
-            console.log(country.countryInfo.iso2)
-            storediso2 = country.countryInfo.iso2
         }
 
-
-        circle.bindPopup(html, storediso2).on("click", circleClick);
+        circle.bindPopup(html).on("click", circleClick);
         mapCircles.push(circle);
 
     })
@@ -198,5 +241,54 @@ const showDataOnMap = (data, casesType = "cases") => {
 }
 
 const circleClick = () => {
-    console.log(storediso2)
+    let flag = document.querySelector('#map > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-popup-pane > div > div.leaflet-popup-content-wrapper > div > div')
+    console.log('flag', flag)
+    let str = flag.innerHTML;
+    console.log('str', str)
+    const chars = str.split('')
+    let gotISO2 = (chars[117] + chars[118]).toUpperCase();
+    console.log(gotISO2)
+
+    let region = ''
+
+    for (let item of WHOData) {
+        let currISO = item.iso2.value;
+        if (gotISO2 == currISO) {
+            console.log(gotISO2);
+            console.log(item.iso2.value)
+            region = item.region
+            if (region === "Europe") {
+                console.log('Europe is my region? Yes, it\'s Europe.', region)
+                changeTweets(3); //WHO Europe's tweets
+            } else if (region == "Africa") {
+                changeTweets(2); //WHO Afro's tweets
+            } else if ((region != "Africa") || (region != "Europe")) {
+                changeTweets(1); //WHO global tweets
+            }
+
+
+        }
+    }
+
+
+
+
 }
+
+/* const WHOGlobalTwitter = 'https://twitter.com/WHO';
+const WHOAfricaTwitter = 'https://twitter.com/whoafro';
+const WHOAmericasTwitter = 'https://twitter.com/pahowho';
+const WHOSEAsiaTwitter = 'https://twitter.com/WHOSEARO';
+const WHOEuropeTwitter = 'https://twitter.com/WHO_Europe';
+const WHOEastMedTwitter = 'https://twitter.com/WHOEMRO';
+const WHOWestPacTwitter = 'https://twitter.com/WHOWPRO';
+ */
+/*
+https://twitter.com/WHO_Europe */
+
+
+
+
+/*
+ <a id="twitter-endpoint" class="twitter-timeline col l10" data-width="340" data-height="245" href="https://twitter.com/whoafro?ref_src=twsrc%5Etfw">Tweets by WHO</a>
+*/

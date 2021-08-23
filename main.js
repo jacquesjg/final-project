@@ -5,12 +5,11 @@ let mapCenter = { lat: 24.80746, lng: 0 }
 let coronaGlobalData;
 let coronaHistoricalData;
 let WHOData = [];
-let storediso2 = '';
 let twitterEndpoint;
 
 // lat: 64.80746, lng: -40.4796
 let mapCircles = [];
-var casesTypeColors = {
+let casesTypeColors = {
     cases: {
         hex: '#CC1034',
         rgb: 'rgb(204, 16, 52)',
@@ -35,9 +34,6 @@ var casesTypeColors = {
 // Initiate Language Drop Down
 window.onload = () => {
     const twitter = document.querySelector('#twitterChange');
-    /*     twttr.widgets.load();
-        var elems = document.querySelectorAll('.dropdown-trigger');
-        var instances = M.Dropdown.init(elems); */
     twitterEndpoint = document.querySelector('#twitter-endpoint');
     console.log(twitterEndpoint)
 

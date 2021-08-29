@@ -7,6 +7,7 @@ let coronaHistoricalData;
 let WHOData = [];
 let twitterEndpoint;
 
+
 // lat: 64.80746, lng: -40.4796
 let mapCircles = [];
 let casesTypeColors = {
@@ -33,6 +34,12 @@ let casesTypeColors = {
 
 // Initiate Language Drop Down
 window.onload = () => {
+
+    var dropdowns = document.querySelectorAll('.dropdown-trigger')
+    for (var i = 0; i < dropdowns.length; i++) {
+        M.Dropdown.init(dropdowns[i]);
+    }
+
     const twitter = document.querySelector('#twitterChange');
     twitterEndpoint = document.querySelector('#twitter-endpoint');
     console.log(twitterEndpoint)
@@ -270,6 +277,10 @@ const circleClick = () => {
 
 
 }
+// make charts and twitter equal map size
+
+
+
 
 /* const WHOGlobalTwitter = 'https://twitter.com/WHO';
 const WHOAfricaTwitter = 'https://twitter.com/whoafro';
@@ -288,3 +299,4 @@ https://twitter.com/WHO_Europe */
 /*
  <a id="twitter-endpoint" class="twitter-timeline col l10" data-width="340" data-height="245" href="https://twitter.com/whoafro?ref_src=twsrc%5Etfw">Tweets by WHO</a>
 */
+

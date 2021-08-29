@@ -29,96 +29,91 @@
     <div class="container white">
         <div class="row" id="nav">
             <!-- Titolo -->
-            <div class="col l2 white">        
-                <h5 class="red-text text-darken-4">COVID-19 Tracker</h1>
+            <div class="col s12 l3 xl3 white center-align" id="title-container">        
+                <h5 class="red-text text-darken-4 center-align" id="title">COVID-19 Tracker</h1>
             </div>
-        
             <!--spacer-->
-            <div class="col l1"></div>
+            <div class="col l1 xl1" id="spacer1"></div>
         
             <!--Search-->
         
                   <form>
-                    <div class="input-field col l6">
+                    <div class="input-field col s10 m9 l6 xl6" id="search-container">
                       <input id="search" type="search" required>
-                      <label class="label-icon" for="search" id="search"><i class="material-icons">search</i><span class="search">Search for Your Country</span></label>
+                      <label class="label-icon" for="search" id="search"><i class="material-icons">search</i><span class="search">Search Country</span></label>
                     </div>
                   </form>
         
             <!--spacer-->
-            <div class="col l1"></div>
-        
-            <!--Language-->        
-            <div id=language-changer class="row col l2 valign-wrapper white">
-        
-        
-            <!-- Dropdown Trigger -->
-            <a class='dropdown-trigger btn red lighten-3' href='#' data-target='dropdown1'>Language</a>
+            <div class="col l1 xl1" id="spacer2"></div>
             
-            <!-- Dropdown Structure -->
-            <ul id='dropdown1' class='dropdown-content'>
-                <li><a href="#!" class="red-text text-lighten-2">English</a></li>
-                <li><a href="#!" class="red-text text-lighten-2">French</a></li>
-                <li><a href="#!" class="red-text text-lighten-2">Spanish</a></li>
-                <li><a href="#!" class="red-text text-lighten-2">Italian</a></li>
-                <li><a href="#!" class="red-text text-lighten-2">Mandarin</a></li>
-            </ul>
-          
-        
-                    <div class="col l4">
-                    <img src="./language-icons/english-icon.png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            <div  id="language-features">
+                <!-- Dropdown Trigger / Language -->
+                <a class='dropdown-trigger btn red lighten-3 col s2 m2 l2 xl1' href='#' data-target='dropdown1' id="button-container"><i class="material-icons">language</i></a>
+                
+                <!-- Dropdown Structure -->
+                <ul id='dropdown1' class='dropdown-content '>
+                    <li><a href="#!" class="red-text text-lighten-2">English</a></li>
+                    <li><a href="#!" class="red-text text-lighten-2">French</a></li>
+                    <li><a href="#!" class="red-text text-lighten-2">Spanish</a></li>
+                    <li><a href="#!" class="red-text text-lighten-2">Italian</a></li>
+                    <li><a href="#!" class="red-text text-lighten-2">Mandarin</a></li>
+                </ul>
+            
+                <div class="col s2 m1 l1 xl1" id="image-container">
+                    <img src="./language-icons/english-icon.png" alt="" id="selected-language-pic"> <!-- notice the "circle" class -->
                     </div>
+                </div>            
             </div>
-        </div>
 
-
-        <div class="row">
+        <div class="row" id="row2">
             <!-- SideNav -->
-            <div class="sideLinks col l2">
+            <div class="sideLinks col s1 m1 l2 xl2" id="side-links">
                <ul>
                 <li>
-                    <a class="waves-effect red-text text-lighten-2" href="#!" onclick="changeDataSelection('cases')"> <i class="material-icons">coronavirus</i> Total Cases</a>
+                    <a class="waves-effect red-text text-lighten-2" id="cases-button" href="#!" onclick="changeDataSelection('cases')"> <i class="material-icons">coronavirus</i><span class="button-text">Total Cases</span></a>
                 </li>
                 <li>
-                    <a class="waves-effect red-text text-lighten-2" href="#!" onclick="changeDataSelection('todayCases')"> <i class="material-icons">trending_up</i><span>New Cases</span></a>
+                    <a class="waves-effect red-text text-lighten-2" id="new-cases-button" href="#!" onclick="changeDataSelection('todayCases')"> <i class="material-icons">trending_up</i><span class="button-text">New Cases</span></a>
                 </li>
                 <li>
-                    <a class="waves-effect red-text text-lighten-2" href="#!" onclick="changeDataSelection('recovered')"> <i class="material-icons">person_add</i> Recovered</a>
+                    <a class="waves-effect red-text text-lighten-2" id="recovered-button" href="#!" onclick="changeDataSelection('recovered')"> <i class="material-icons">person_add</i><span class="button-text">Recovered</span></a>
                 </li>
                 <li>
-                    <a class="waves-effect red-text text-lighten-2" href="#!" onclick="changeDataSelection('deaths')"> <i class="material-icons">person_remove</i> Deceased</a>
+                    <a class="waves-effect red-text text-lighten-2" id="deaths-button" href="#!" onclick="changeDataSelection('deaths')"> <i class="material-icons">person_remove</i><span class="button-text">Deceased</span></a>
                 </li>
                 <li>
-                    <a class="waves-effect red-text text-lighten-2" href="#!" onclick="changeDataSelection('vaccinated')"> <i class="material-icons">shield</i> Vaccinated</a>
+                    <a class="waves-effect red-text text-lighten-2" id="vaccinated-button" href="#!" onclick="changeDataSelection('vaccinated')"> <i class="material-icons">shield</i><span class="button-text">Vaccinated</span></a>
                 </li>
                </ul>
            </div>
 
 
             <!--content-->
-            <div id="content" class="col l10 red lighten-4">
-            <div class="map-container col l8"><div class="col l12" id="map"></div></div>
-            <div id="graphs-container" class="col l4 grey lighten-4"><canvas id="myChart"></canvas></div>
-            <div id="twitter" class="col l4 grey lighten-4">
-                <div class="row" id="twitterChange">
-                    <!-- Shown by default -->
-                    <div id="widget-container-1" class="show">
-                        <a id="twitter-endpoint-1" class="twitter-timeline col l10" data-width="340" data-height="245" href="https://twitter.com/WHO">Tweets by WHO</a>
-                    </div>
+            <div id="content" class="col s10 m11 l9 xl9 red lighten-4">
+            <div class="map-container col s12 m12 l7 xl7" id="map"><div class="col s12 m11 l12 xl12" id="map"></div></div>
+           <div class="col s12 m12 l4 xl4" id="twitandgraph">
+                <div id="graphs-container" class="col s12 m6 l12 xl12 grey lighten-4"><canvas id="myChart"></canvas></div>
+                <div id="twitter" class="col l4 m6 ">
+                    <div class="row" id="twitterChange">
+                        <!-- Shown by default -->
+                        <div id="widget-container-1" class="show">
+                            <a id="twitter-endpoint-1" class="twitter-timeline col l10 xl10" data-height="245" href="https://twitter.com/WHO">Tweets by WHO</a>
+                        </div>
 
-                    <!-- Hidden by default -->
-                    <div id="widget-container-2" class="hidden">
-                        <a id="twitter-endpoint-2" class="twitter-timeline col l10" data-width="340" data-height="245" href="https://twitter.com/whoafro">Tweets by WHO Africa</a>
-                    </div>
-                    <div id="widget-container-3" class="hidden">
-                        <a id="twitter-endpoint-3" class="twitter-timeline col l10" data-width="340" data-height="245" href="https://twitter.com/WHO_Europe">Tweets by WHO Europe</a>
+                        <!-- Hidden by default -->
+                        <div id="widget-container-2" class="hidden">
+                            <a id="twitter-endpoint-2" class="twitter-timeline col l10 xl10" data-height="245" href="https://twitter.com/whoafro">Tweets by WHO Africa</a>
+                        </div>
+                        <div id="widget-container-3" class="hidden">
+                            <a id="twitter-endpoint-3" class="twitter-timeline col l10 xl10" data-height="245" href="https://twitter.com/WHO_Europe">Tweets by WHO Europe</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        
-
         </div>
-        </div>
+       
+    </div>
 </div>
 
 

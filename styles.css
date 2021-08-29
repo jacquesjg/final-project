@@ -334,7 +334,13 @@ body > div > div:nth-child(2) > div > ul > li > a {
     height: 75vh;
   }
   #side-links > ul {
-    height: 75vh;
+    height: 70vh;
+  }
+  #content {
+    height: 70vh;
+  }
+  #graphs-container {
+    height: 150px;
   }
 }
 

@@ -326,6 +326,9 @@ body > div > div:nth-child(2) > div > ul > li > a {
 }
 
 @media only screen and (min-height: 600px) and (max-width: 991px) {
+  body {
+    height: 100vw;
+  }
   #row2 {
     margin-top: 40px;
   }
@@ -343,10 +346,9 @@ body > div > div:nth-child(2) > div > ul > li > a {
     height: 150px;
   }
   .container {
-    height: 700px !important;
   }
   #nav {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 }
 

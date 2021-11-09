@@ -218,7 +218,7 @@ const showDataOnMap = (data, casesType = "cases") => {
         if (country.countryInfo.iso2 != null) {
             var html = `
             <div class="info-container">
-                <div class="info-flag" style="background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/${country.countryInfo.iso2.toLowerCase()}.svg);">
+                <div class="info-flag" style="background-image: url(https://flagicons.lipis.dev/flags/4x3/${country.countryInfo.iso2.toLowerCase()}.svg);">
                 </div>
                 <div class="info-name">
                     ${country.country}
